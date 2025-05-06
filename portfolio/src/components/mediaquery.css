@@ -1,0 +1,32 @@
+@media screen and (max-width: 400px) {
+ .lefthomepage{
+    width:600px;
+ }
+ .righthomepage{
+    width:600px;
+    height: 100vh;
+ }
+ .img-luffy{
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+ }
+ .img-luffy img{
+    width:250px
+ }
+.welcomemessage{
+        font-size: 23px;
+        left: 13%;
+        top: 70%;
+    }
+    .button-hireme{
+        left: 55%;
+        top: 78%;
+    }
+ .button-hireme button{
+    width: 120px;
+    height: 50px;
+    font-size:15px;
+    
+ }
+}
