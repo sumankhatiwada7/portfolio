@@ -9,7 +9,8 @@
     top: 85%;               /* Use top instead of margin-top */
     left: 45%;              /* Center horizontally */
     transform: translateX(-50%); /* Adjust for width */
-    margin: 0;              /* Remove any margin that affects layout */
+    margin: 0;  
+    z-index: 999;            /* Remove any margin that affects layout */
 }
 
 .svgnav img {
