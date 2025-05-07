@@ -1,5 +1,5 @@
 import './skills.css';
-
+import './mediaquery.css';
 const Skills = ({ skills }) => {
   return (
     <div className="skills-section">

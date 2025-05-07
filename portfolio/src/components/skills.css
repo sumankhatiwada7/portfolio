@@ -2,7 +2,8 @@
     padding: 40px;
     background-color: #f6f9fc;
     text-align: left;
-    height: 40vh;
+    height: 60vh;
+    max-width: 100%;
   }
   
   .skills-heading h2 {

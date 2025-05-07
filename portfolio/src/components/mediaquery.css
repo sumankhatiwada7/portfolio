@@ -3,7 +3,7 @@
     width:600px;
  }
  .righthomepage{
-    width:600px;
+    width:100%;
     height: 100vh;
  }
  .img-luffy{
@@ -29,4 +29,7 @@
     font-size:15px;
     
  }
+.skills-section{
+   width:100%;
+}
 }
