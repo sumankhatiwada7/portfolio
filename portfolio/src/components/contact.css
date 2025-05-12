@@ -1,0 +1,144 @@
+.contact {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(6, 45, 237, 0.534);
+}
+
+.heading-contact {
+    padding: 40px;
+}
+
+.heading-contact h1 {
+    padding: 20px;
+    font-size: 2rem;
+    margin-bottom: 0.2em;
+    color: #1b1c1e;
+}
+
+.heading-contact h3 {
+    padding: 20px;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: #c4c4c4;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .contact-form input,
+.contact-form textarea {
+    width: 90%;
+    max-width: 700px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid #020202;
+   color: black;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:hover,
+.contact-form input:focus,
+.contact-form textarea:hover,
+.contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 0.1); /* subtle glow */
+    border-color: #fff; /* white border on focus */
+}
+
+.contact-form textarea {
+    height: 200px;
+    resize: vertical;
+}
+
+.contact-form ::placeholder {
+    text-align: left;
+    color: #0e0e0e;
+}
+.button-form
+button{
+    position: relative;
+   
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+     border-bottom-right-radius: 20px;
+     text-align: center;
+
+}
+.link-socialmedia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 10px;
+}
+
+
+.social-mediacard a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #f4f4f4;
+ margin-top: 20px;
+  border-radius: 20px;
+  padding: 10px 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  min-width: 100px;
+  color: rgba(255, 255, 255, 0.825);
+  
+  background-color: #000000ef;
+}
+
+.social-mediacard a:hover {
+  color: rgba(0, 128, 0, 0.514);
+    transform: scale(1.05);
+}
+
+.img-socialmedia img{
+  width: 80px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit:cover;
+  color:white
+}
+
+
+
+.name-socialmedia p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+ 
+}
+.footer hr{
+    margin-top: 10px;
+    width: 90%;
+    background-color: #020202;
+    color: black;
+
+}
+footer{
+    background-color: rgb(255, 255, 255);
+    margin-top: 90px;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.footer p {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+}
