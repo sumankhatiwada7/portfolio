@@ -1,0 +1,185 @@
+/* homepage.css */
+.home {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.lefthomepage {
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+  position: relative;
+  z-index: 2;
+}
+
+.welcomemessage {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  margin-bottom: 2rem;
+}
+
+.welcomemessage h1 {
+  font-size: 3.5rem;
+  color: #2a1843;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.welcomemessage p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+.button-hireme {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.button-hireme button {
+  background: linear-gradient(135deg, #6e45e2, #88d3ce);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  width: 180px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(110, 69, 226, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.button-hireme button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: 0.5s;
+}
+
+.button-hireme button:hover::before {
+  left: 100%;
+}
+
+.button-hireme button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(110, 69, 226, 0.4);
+}
+
+.img-luffy {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+  z-index: 1;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+}
+
+.img-luffy img {
+  width: 350px;
+  height: auto;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.righthomepage {
+  width: 40%;
+  background: linear-gradient(135deg, #4fc3f7, #6e45e2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.righthomepage::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.name {
+  writing-mode: vertical-rl;
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 5px;
+  display: flex;
+  gap: 1rem;
+}
+
+.name span {
+  display: block;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.name span#first {
+  color: #2a1843;
+}
+
+.name span#second {
+  color: #ffffff;
+}
+
+/* Background animation */
+.home::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #6e45e2, #4fc3f7);
+  top: -250px;
+  right: -250px;
+  opacity: 0.1;
+  animation: pulse 8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.15;
+  }
+}

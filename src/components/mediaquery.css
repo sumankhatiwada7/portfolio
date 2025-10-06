@@ -1,0 +1,143 @@
+/* mediaquery.css */
+/* Tablets */
+@media (max-width: 1024px) {
+  .lefthomepage {
+    width: 50%;
+    padding-left: 8%;
+  }
+  
+  .welcomemessage h1 {
+    font-size: 2.8rem;
+  }
+  
+  .img-luffy img {
+    width: 300px;
+  }
+  
+  .name {
+    font-size: 2.8rem;
+  }
+  
+  .righthomepage {
+    width: 50%;
+  }
+}
+
+/* Large Mobile */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+  
+  .lefthomepage {
+    width: 100%;
+    height: 50vh;
+    padding: 0 5%;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .welcomemessage {
+    text-align: center;
+  }
+  
+  .img-luffy {
+    top: 45%;
+    left: 50%;
+    z-index: 3;
+  }
+  
+  .img-luffy img {
+    width: 250px;
+  }
+  
+  .righthomepage {
+    width: 100%;
+    height: 20vh;
+  }
+  
+  .name {
+    writing-mode: horizontal-tb;
+    flex-direction: row;
+    font-size: 2.5rem;
+    gap: 0.5rem;
+  }
+  
+  .home::after {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .lefthomepage {
+    height: 60vh;
+  }
+  
+  .welcomemessage h1 {
+    font-size: 2.2rem;
+  }
+  
+  .welcomemessage p {
+    font-size: 1rem;
+  }
+  
+  .img-luffy img {
+    width: 200px;
+  }
+  
+  .name {
+    font-size: 2rem;
+    gap: 0.3rem;
+  }
+  
+  .button-hireme button {
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+  }
+  
+  .righthomepage {
+    height: 15vh;
+  }
+}
+
+/* Very small mobile */
+@media (max-width: 320px) {
+  .welcomemessage h1 {
+    font-size: 1.8rem;
+  }
+  
+  .name {
+    font-size: 1.6rem;
+  }
+  
+  .img-luffy img {
+    width: 180px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1600px) {
+  .welcomemessage h1 {
+    font-size: 4.5rem;
+  }
+  
+  .welcomemessage p {
+    font-size: 1.5rem;
+  }
+  
+  .img-luffy img {
+    width: 450px;
+  }
+  
+  .name {
+    font-size: 4.5rem;
+  }
+  
+  .button-hireme button {
+    width: 220px;
+    height: 70px;
+    font-size: 1.3rem;
+  }
+}
